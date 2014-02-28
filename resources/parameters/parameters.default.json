@@ -1,0 +1,37 @@
+{
+	"version": "default",
+	"siteURL": "",
+	"defaultLanguage": "en",
+	"errorReporting": false,
+	"errorReportingUrl": "/broadcast/error",
+	"validationPatterns": {
+		"password": "^[a-zA-Z0-9!@#$%^&*()\\-_+=?\rÀ-ÖØ-öø-úü]{6,30}$",
+		"name": "[a-zA-ZÀ-ÖØ-öø-úü]{2,50}",
+		"address": "[a-zA-ZÀ-ÖØ-öø-úü0-9]*",
+		"city": "[a-zA-ZÀ-ÖØ-öø-úü]*",
+		"country": "[a-zA-ZÀ-ÖØ-öø-úü]*",
+		"postcode": "[0-9]{4}",
+		"dob": "^[0-9]{4}-[0-9]{1,2}-[0-9]{1,2}$",
+		"phone": "[0-9 +]*",
+		"comments": "[a-zA-ZÀ-ÖØ-öø-úü]*"
+	},
+	"forms": {
+		"controls": {
+			"firstName": {
+				"name": "firstName",
+				"required": true,
+				"pattern": "name"
+			},
+			"lastName": {
+				"name": "lastName",
+				"required": true,
+				"pattern": "name"
+			},
+			"email": {
+				"name": "email",
+				"required": true,
+				"pattern": "email"
+			}
+		}
+	}
+}

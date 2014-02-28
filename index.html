@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="ng-app: Application; no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="ng-app: Application; no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="ng-app: Application; no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" ng-app="Application" unused-manifest="offline.appcache"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title ng-bind="pageTitlePrefix + pageTitle + pageTitleSuffix"></title>
+
+	<meta name="description" content="{{pageDescription}}">
+	<meta name="viewport" content="width=device-width">
+
+
+	<!-- IE Conditionals  -->
+	<!--[if lte IE 9]>
+	<script type="text/javascript" src="lib/polyfills/html5shiv.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="style/css/screen.css">
+	<link media="print" rel="stylesheet" type="text/css" href="style/css/print.css"/>
+
+	<!-- SCRIPTS -->
+
+	<!-- VENDOR -->
+
+	<script src="lib/vendor/modernizr-2.7.1.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="lib/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+
+	<!-- ANGULARJS -->
+	<script type="text/javascript" src="lib/angular-1.2.13/angular.js"></script>
+	<script type="text/javascript" src="lib/angular-1.2.13/angular-route.js"></script>
+	<script type="text/javascript" src="lib/angular-1.2.13/angular-resource.js"></script>
+	<script type="text/javascript" src="lib/angular-1.2.13/angular-animate.js"></script>
+
+<!--	<script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-animate.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-resource.min.js" type="text/javascript" charset="utf-8"></script>-->
+
+	<!-- APPLICATION -->
+	<script type="text/javascript" src="lib/app/00a.app.prototypes.js"></script>
+	<script type="text/javascript" src="lib/app/00b.app.utilities.js"></script>
+	<script type="text/javascript" src="lib/app/00c.app.js"></script>
+	<script type="text/javascript" src="lib/app/01b.app.services.core.js"></script>
+	<script type="text/javascript" src="lib/app/01c.app.services.js"></script>
+	<script type="text/javascript" src="lib/app/02a.app.controllers.core.js"></script>
+	<script type="text/javascript" src="lib/app/02b.app.controllers.js"></script>
+	<script type="text/javascript" src="lib/app/03a.app.filters.js"></script>
+	<script type="text/javascript" src="lib/app/04a.app.components.core.js"></script>
+	<script type="text/javascript" src="lib/app/04b.app.components.js"></script>
+	<script type="text/javascript" src="lib/app/04b.app.components.formControls.js"></script>
+	<script type="text/javascript" src="lib/app/05a.app.directives.js"></script>
+
+
+	<!-- CUSTOM -->
+	<script src="lib/plugins.js"></script>
+	<script src="lib/main.js"></script>
+
+</head>
+<body ng-controller="MasterCtrl" class="{{bodyClass}}" data-device-size="{{deviceSize}}" data-load-status="{{loadStatus}}" data-system-message="{{systemMessageStatus}}" data-route="{{routeName}}">
+	<header>
+		<nav>
+			<ul>
+				<li data-view="home"><a href="#!/issues" ng-bind="terms.views.home.title"></a></li>
+				<li data-view="messages"><a href="#!/messages" ng-bind="terms.views.messages.title"></a></li>
+				<li data-view="tasks"><a href="#!/tasks" ng-bind="terms.views.tasks.title"></a></li>
+				<li data-view="user"><a href="#!/user" ng-bind="terms.views.user.title"></a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div ng-view class="view"></div>
+	</main>
+</body>
+</html>

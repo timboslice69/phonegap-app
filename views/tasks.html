@@ -1,0 +1,11 @@
+<div id="tasks" data-view="tasks">
+	<div class="list">
+		<ul class="tasklist">
+			<li ng-repeat="task in state.tasks" class="task" ng-class="{done: task.done}" ng-bind="task.name" ng-click="toggleDone(task)"></li>
+		</ul>
+		<form ng-submit="addNewTask()">
+			<input type="text" ng-model="newTask">
+			<button type="submit">Add</button>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,26 @@
+{
+	"language": "en",
+	"appName": "PhoneGap Application",
+	"pageTitlePrefix": " ",
+	"pageTitle": "",
+	"pageTitleSuffix": " © 2014 EGGS Design",
+	"appSlogan": "Test application for phonegap packaging",
+	"views": {
+		"home": {
+			"title": "Home",
+			"description": "home meta description"
+		},
+		"messages": {
+			"title": "Messages",
+			"description": "messages meta description"
+		},
+		"tasks": {
+			"title": "Tasks",
+			"description": "tasks meta description"
+		},
+		"user": {
+			"title": "User",
+			"description": "user meta description"
+		}
+	}
+}

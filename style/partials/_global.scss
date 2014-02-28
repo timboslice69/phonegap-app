@@ -1,0 +1,44 @@
+/*  ================================================================================
+	Global Styles
+	A good place to specify top level styles and defaults for common elements
+================================================================================  */
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	padding-top: $navigationHeight;
+	background: #fff;
+	font-family: helvetica, arial;
+	font-size: 12pt;
+	line-height: 1.6em;
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+
+header {
+}
+
+nav {
+}
+
+footer {
+}
+
+/*  ================================================================================
+	Default Styles for common elements
+================================================================================  */
+
+h1 { }
+
+p { }
+
+a {
+	&:link { }
+	&:active { }
+	&:visited { }
+	&:hover { }
+}
+
+img { }

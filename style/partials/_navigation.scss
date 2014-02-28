@@ -1,0 +1,36 @@
+header nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 8000;
+
+	ul {
+		@include flex-box();
+	}
+
+	li {
+		@include flex(1);
+		border-left: 1px solid #fff;
+		&:first-child { border-width: 0; }
+
+		a {
+			display: block;
+			height: $navigationHeight;
+			line-height: $navigationHeight;
+			text-align: center;
+			text-decoration: none;
+			background: #fff;
+			color: #000;
+		}
+	}
+}
+
+// Navigation States
+body[data-route="home"] nav li[data-view="home"] a,
+body[data-route="messages"] nav li[data-view="messages"] a,
+body[data-route="tasks"] nav li[data-view="tasks"] a,
+body[data-route="user"] nav li[data-view="user"] a {
+	background: cornflowerblue;
+	color: #fff;
+}
